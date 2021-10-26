@@ -2,11 +2,10 @@ const mongoose = require('mongoose');
 
 const PostModel = mongoose.model(
     //nom de la bd
-    '',
+    'datagym',
 
     {
-
-        data : [ 
+        data_gym : [ 
             
             {
                 info_gym : [
@@ -15,7 +14,7 @@ const PostModel = mongoose.model(
                             type : String,
                             require : true 
                         },
-        
+
                         adresse_gym : {
                             type : String,
                             require : true
@@ -68,7 +67,7 @@ const PostModel = mongoose.model(
 
                         horaire : {
                             type : Date,
-                            default : Date.getHour()
+                            default : Date.now,
                         },
 
                         nbr_membres : {
@@ -114,7 +113,7 @@ const PostModel = mongoose.model(
     },
 
     //nom de la collection
-    ''
+    'datalist'
 )
 
 module.exports = PostModel;
