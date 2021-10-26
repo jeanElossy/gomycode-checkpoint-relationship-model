@@ -7,3 +7,4 @@ require('./model/db_config');
 app.listen(8080, (req, res) => {
     console.log(`server starting`);
 });
+
