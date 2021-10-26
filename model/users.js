@@ -6,25 +6,30 @@ const PostModel = mongoose.model(
 
     {
 
-        info_gym : [ 
+        data : [ 
             
             {
-                nom_gym : {
-                    type : String,
-                    require : true 
-                },
+                info_gym : [
+                    {
+                        nom_gym : {
+                            type : String,
+                            require : true 
+                        },
+        
+                        adresse_gym : {
+                            type : String,
+                            require : true
+                        },
+        
+                        numero_gym : {
+                            type : Number,
+                            require : true
+                        }
+                    }
+                ],
 
-                adresse_gym : {
-                    type : String,
-                    require : true
-                },
 
-                numero_gym : {
-                    type : Number,
-                    require : true
-                },
-
-                membres : [ 
+                info_membres : [ 
                     {
                         id : {
                             type : Number,
@@ -45,15 +50,65 @@ const PostModel = mongoose.model(
                             type : Number,
                             require : true
                         },
-                        
+
                         sexe : {
                             type : String,
                             require : true 
                         }
                     }
-                ]
-            }
+                ],
 
+
+                info_session : [
+                    {
+                        type_sport : {
+                            type : String,
+                            require : true
+                        },
+
+                        horaire : {
+                            type : Date,
+                            default : Date.getHour()
+                        },
+
+                        nbr_membres : {
+                            type : Number,
+                            require : true
+                        }
+                    }
+                ],
+
+
+                info_coach : [
+                    {
+                        nbr_coach : {
+                            type : Number,
+                            require : true
+                        },
+                        
+                        nom_coach : {
+                            type : String,
+                            require : true
+                        },
+
+                        prenom_coach : {
+                            type : String,
+                            require : true
+                        },
+
+                        age_coach : {
+                            type : Number,
+                            require : true
+                        },
+
+                        specialite_coach : {
+                            type : String,
+                            require : true
+                        }
+                    }
+                ]
+
+            }
         ]
 
     },
