@@ -1,0 +1,24 @@
+{
+  "name": "gomycode-checkpoint-relationship-model",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeanElossy/gomycode-checkpoint-relationship-model.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeanElossy/gomycode-checkpoint-relationship-model/issues"
+  },
+  "homepage": "https://github.com/jeanElossy/gomycode-checkpoint-relationship-model#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.14"
+  }
+}
